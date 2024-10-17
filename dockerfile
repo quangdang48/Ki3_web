@@ -4,7 +4,7 @@ FROM tomcat:9.0
 RUN mkdir -p /usr/local/tomcat/webapps/
 
 # Copy the war file (or the project if it’s already built) into the Tomcat webapps directory
-COPY *.war /usr/local/tomcat/webapps/
+COPY C7_session_cart.war /usr/local/tomcat/webapps/
 
 # Expose port 8080
 EXPOSE 8080
